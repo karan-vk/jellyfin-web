@@ -477,7 +477,7 @@ export const Component = () => {
                                 </FormControl>
                             )}
 
-                            {(hardwareAccelType === 'none' || hardwareAccelType === 'vaapi') && (
+                            {hardwareAccelType !== 'v4l2m2m' && (
                                 <FormControl>
                                     <FormControlLabel
                                         label={globalize.translate('EnableHdrPassthrough')}
